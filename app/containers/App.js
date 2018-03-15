@@ -1,5 +1,6 @@
 // @flow
-import * as React from 'react';
+import * as React from "react";
+import { Container } from "semantic-ui-react";
 
 type Props = {
   children: React.Node
@@ -9,10 +10,6 @@ export default class App extends React.Component<Props> {
   props: Props;
 
   render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
+    return <Container>{this.props.children}</Container>;
   }
 }
